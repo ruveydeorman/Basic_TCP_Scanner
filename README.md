@@ -8,8 +8,17 @@ It sends SYN packets to a target IP address across a specified port range and id
 - Custom IP and port range input
 - Displays open ports in terminal
 - Measures total scan duration
+- 
+  ## With Docker 
 
-## Installation
+To run the project with Docker:
+
+```bash
+docker build -t tcp-scanner .
+docker run -it tcp-scanner
+```
+
+## Installation (without Docker)
 ```bash
 sudo apt update sudo apt install python3-pip pip install scapy
 
